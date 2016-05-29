@@ -16,6 +16,7 @@ KERNEL= ${PROGROOT}/minix/kernel/kernel
 PROGRAMS+= ${PROGROOT}/minix/servers/ds/ds
 PROGRAMS+= ${PROGROOT}/minix/servers/rs/rs
 PROGRAMS+= ${PROGROOT}/minix/servers/pm/pm
+PROGRAMS+= ${PROGROOT}/minix/servers/adm_sched/adm_sched
 PROGRAMS+= ${PROGROOT}/minix/servers/sched/sched
 PROGRAMS+= ${PROGROOT}/minix/servers/vfs/vfs
 PROGRAMS+= ${PROGROOT}/minix/drivers/storage/memory/memory
