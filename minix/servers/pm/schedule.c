@@ -69,9 +69,11 @@ int sched_start_user(endpoint_t ep, struct mproc *rmp)
 	 * parent
 	 */
 	if (mproc[rmp->mp_parent].mp_flags & PRIV_PROC) {
+		/*se entra a este if si el proceso es hijo de un sistema del proceso, asi que este seria NUESTRO padre*/
 		assert(mproc[rmp->mp_parent].mp_scheduler == NONE);
 		inherit_from = INIT_PROC_NR;
 	} else {
+		/*aca seria NUESTRO hijo*/
 		inherit_from = mproc[rmp->mp_parent].mp_endpoint;
 	}
 	

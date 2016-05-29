@@ -18,6 +18,8 @@ struct boot_image_priv boot_image_priv_table[] = {
 {VM_PROC_NR,   "vm",     VM_F   },
 {PM_PROC_NR,   "pm",     SRV_F  },
 {ADM_SCHED_PROC_NR,"adm_sched",  SRV_F  },
+{SCHED_RR_PROC_NR,"sched_rr",  SRV_F  },
+{SCHED_FCFS_PROC_NR,"sched_fcfs",  SRV_F  },
 {SCHED_PROC_NR,"sched",  SRV_F  },
 {VFS_PROC_NR,  "vfs",    SRV_F  },
 {DS_PROC_NR,   "ds",     SRV_F  },

@@ -14,6 +14,7 @@
 #include "const.h"
 
 EXTERN struct mproc {
+  int mp_nuestra_var;		/*con esta variable veremos si es hijo o padre sgun nuestra definicion, 1 padre 0 hijo*/
   char mp_exitstatus;		/* storage for status when process exits */
   char mp_sigstatus;		/* storage for signal # for killed procs */
   pid_t mp_pid;			/* process id */
